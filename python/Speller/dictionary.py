@@ -21,5 +21,5 @@ def size():
     #TODO
     
 def unload():
-    """Return true if dictionary is unloaded successfully"""
+    """Return true if dictionary is unloaded successfully (Q. Will this ever be False?)"""
     #TODO
