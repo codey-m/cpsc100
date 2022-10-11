@@ -18,3 +18,7 @@ def load(dictionary):
 def size():
     """Returns number of words in dictionary if loaded else 0 if not yet loaded"""
     #TODO
+    
+def unload():
+    """Unload our dictionary"""
+    #TODO
