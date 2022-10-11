@@ -1,5 +1,6 @@
-# Words in dictionary
-words = {}
+# Load words into dictionary (list in this case)
+# consider updating this data type to improve Run-times!
+words = []
 
 def check(word):
     """Return true if word is in dictionary else false"""
