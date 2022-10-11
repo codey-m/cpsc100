@@ -1,5 +1,5 @@
 # Words in dictionary
-words = []
+words = {}
 
 
 def check(word):
