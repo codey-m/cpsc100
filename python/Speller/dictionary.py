@@ -20,5 +20,5 @@ def size():
     #TODO
     
 def unload():
-    """Unload our dictionary"""
+    """Return true if dictionary is unloaded successfully"""
     #TODO
