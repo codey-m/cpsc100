@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+    <style>
+        table {
+            text-align:left;
+        }
+        #center {
+            text-align:center;
+        }
+    </style>
+
+    <h3>Congratulations, NAME you've registered for SPORT!</h3>
+    <h1>Counts</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Sport</th>
+                <th>Registrant Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key in sports %}
+                <tr>
+                    <!--TODO:   display each sport in our dictionary sports
+                                alongside the number of registrants for that sport-->
+                    <td> TODO </td>
+                    <td id="center">TODO</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
