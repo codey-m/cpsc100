@@ -5,11 +5,10 @@
 ## OUTPUT: battlestar bears BEETS Galactica
 
 ## USAGE: python sorted.py b3ars BEETS b@ttlestar Galactica
-## OUTPUT: "Usage: Send only letters!!""
+## OUTPUT: Usage: Send only letters!!
 
-## IMPORT: functions argv for CLAs && exit for exit without main
+## IMPORT: argv, the list of CLAs (argv[0] is the program name) && exit, for exiting without main
 from sys import argv, exit
-argv(1)
 
 # TODO: SORT LIST OF CLAs
 

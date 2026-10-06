@@ -1,5 +1,5 @@
 #include "helpers.h"
-#import <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
@@ -55,7 +55,7 @@ void selectionSort(int height, int width, RGBTRIPLE image[height][width]) {
 
 // YOU DO: selection sort helper function
 int findMin(int start, int width, HSVTRIPLE image[width]) {
-    int min = image[start].hue;
+    float minHue = image[start].hue;
     int index = start;
     // YOU DO: find the index in range [start,width) of the row image[width] with the minimum hue
 

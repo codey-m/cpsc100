@@ -1,5 +1,5 @@
 #include "helpers.h"
-#import <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
@@ -61,8 +61,8 @@ void combinationSort(int height, int width, RGBTRIPLE image[height][width]) {
 
 // returns the (0 indexed) row number that contains the next minimum we will add to our sorted array
 int findMinRow(int height, int width, HSVTRIPLE image[height][width], int index[height]) {
-    // YOU DO: find a good first value to initialize min
-    int min;
+    // YOU DO: find a good first value to initialize minHue
+    float minHue;
     int ret = 0;
 
     // YOU DO: store the row index that contains the next minimum in ret
@@ -95,11 +95,11 @@ void selectionSort(int height, int width, HSVTRIPLE image[height][width]) {
 }
 
 int findMinCol(int start, int width, HSVTRIPLE image[width]) {
-    int min = image[start].hue;
+    float minHue = image[start].hue;
     int index = start;
     for (int i = start; i < width; i++) {
-        if (image[i].hue < min) {
-            min = image[i].hue;
+        if (image[i].hue < minHue) {
+            minHue = image[i].hue;
             index = i;
         }
     }

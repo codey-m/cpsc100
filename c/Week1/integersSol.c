@@ -19,7 +19,7 @@ int main()
 void integers(int start, int stop, int step)
 {
     // TODO
-    for (int i = start; i <= stop; i+=count) {
+    for (int i = start; i <= stop; i += step) {
         printf("%i ", i);
     }
     printf("\n");

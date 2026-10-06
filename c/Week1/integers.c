@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void integers();
+void integers(void);
 
 int main()
 {
@@ -13,10 +13,10 @@ int main()
     // 3. to print any range of integers, counting by any integer
     //      -> eg, integers from 5 to 30, counting by 5's?
 
-    integers()
+    integers();
 }
 
-void integers()
+void integers(void)
 {
     // TODO
 }

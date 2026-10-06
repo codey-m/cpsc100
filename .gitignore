@@ -1,0 +1,9 @@
+# system and build files
+.DS_Store
+__pycache__/
+
+# compiled C programs (make names them after the source file, with no extension)
+c/*/filter
+c/Week1/*
+!c/Week1/*.c
+!c/Week1/*.md

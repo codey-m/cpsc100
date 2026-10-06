@@ -1,9 +1,7 @@
-// function practice!
-// rewrite parts of this main code to use a function
+// array practice!
+// find the period of a repeating decimal, eg, 4/11 = 0.363636... has period 2
 #include <cs50.h>
-#include <string.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 const int SZ = 15;
 
@@ -17,7 +15,7 @@ int main() {
     do {
         num = get_double("numerator: ");
         denom = get_double("denominator: ");
-    } while (num >= denom);
+    } while (num < 0 || denom <= 0 || num >= denom);
 
     // TODO: create array
     double res = num / denom;
@@ -34,12 +32,14 @@ int main() {
     printf("\n");
 
     // TODO: check for repeats (eg, 4/11 has period 2)
-    for (int i = 1; i < 7; i++) {
+    // a period of i needs 2 * i digits to compare, so i can be at most SZ / 2
+    for (int i = 1; i <= SZ / 2; i++) {
         if (check_P(arr, i)){
             printf("periodicity is %i\n", i);
-            exit(0);
+            return 0;
         }
     }
+    printf("no period found in the first %i digits\n", SZ);
 }
 
 bool check_P(int arr[], int num){

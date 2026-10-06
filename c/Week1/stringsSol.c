@@ -18,14 +18,16 @@ int main()
 string letters(int start, int stop, int step)
 {
     // TODO
-    int num = (stop - start) / step;
-    char tmp[num];
-    for(int i = start, index = 0; i <= stop; i+=step) {
+    // static, so the array still exists after this function returns
+    // (an ordinary local array is gone once letters() ends)
+    static char tmp[27];    // at most 26 letters, plus the '\0' that ends every string
+    int index = 0;
+    for (int i = start; i <= stop; i += step) {
         tmp[index] = i;
         index++;
     }
-    string ret = tmp;
-    return ret;
+    tmp[index] = '\0';
+    return tmp;
 }
 
 void reverse(string str) {

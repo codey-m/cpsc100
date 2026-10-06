@@ -6,6 +6,7 @@
 
 // TODO: update helper prototypes with parameter and return types
 // HINT: check the CS50 manual for reference!
+// (camelCase names, so they don't collide with C's own isalpha, toupper, and strlen)
 bool isAlpha(char ch);
 char toUpper(char ch);
 int strLen(string s);
@@ -19,20 +20,21 @@ int main()
     // printf("1 is alpha? -> %i\n", isAlpha(1));
 
     printf("a is alpha? -> %c\n", printBool(isAlpha('a')));
-    printf("1 is alpha? -> %c\n", printBool(isAlpha(1)));
+    printf("1 is alpha? -> %c\n", printBool(isAlpha('1')));
 
 
     string str = get_string("test string: ");
     printf("length of string is %i\n", strLen(str));
 }
 
+// return 'T' or 'F' so a bool can be printed with %c
 char printBool(bool b)
 {
     if (b)
     {
-        return 84;
+        return 'T';
     }
-    return 70;
+    return 'F';
 }
 bool isAlpha(char ch)
 {

@@ -5,7 +5,9 @@ app = Flask(__name__)
 @app.route("/")
 def pokedex():
     # TODO: render a template displaying all 9 pokemon
+    return "TODO"
 
 @app.route("/display")
 def disp():
     # TODO: render a template displaying a closeup of bulbasaur
+    return "TODO"

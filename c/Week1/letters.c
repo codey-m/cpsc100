@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void letters();
+void letters(void);
 
 int main()
 {
@@ -14,7 +14,7 @@ int main()
     letters();
 }
 
-void letters(int start, int stop, int step)
+void letters(void)
 {
     // TODO
     printf("\n");

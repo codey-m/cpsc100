@@ -6,14 +6,15 @@
 
 // TODO: update helper prototypes with parameter and return types
 // HINT: check the CS50 manual for reference!
-void isalpha(void);
-void toupper(void);
-void strlen(void);
+// (camelCase names, so they don't collide with C's own isalpha, toupper, and strlen)
+void isAlpha(void);
+void toUpper(void);
+void strLen(void);
 
 int main()
 {
-    // TODO: write tests for each of your method as you complete them
+    // TODO: write tests for each of your methods as you complete them
 
     // eg,  string str = get_string("test string: ");
-    //      printf("length of string is %i", strlen(str));
+    //      printf("length of string is %i", strLen(str));
 }
